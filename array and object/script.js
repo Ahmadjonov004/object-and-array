@@ -128,10 +128,55 @@
 
 // !! 14-misol 
 
-function teskariMassiv(arr) {
-    const teskari = arr.reverse();  
-    return teskari;  
-}
+// function teskariMassiv(arr) {
+//     const teskari = arr.reverse();  
+//     return teskari;  
+// }
 
-const input = [1, 2, 3, 4];
-console.log(teskariMassiv(input));  
+// const input = [1, 2, 3, 4];
+// console.log(teskariMassiv(input));  
+
+
+// !! object bo'yicha misollar 
+
+// !! 1-misol
+
+// {
+//     name: "Ali",
+//     age: 25,
+//     address: { street: "Chorsu", city: "Toshkent", zipcode: 100011 },
+//     phoneNumbers: ["+998901234567", "+998907654321"]
+//   }
+// 
+// !! 2-misol
+
+// let user = {
+//     id: 1, 
+//     name: "Ali",
+//     age: 26,
+//     role: "user",
+//     isActive : true
+// };
+// user.role = "admin";
+// user.isActive = "false"
+// user.lastLogin = Date.now()
+// console.log(user)
+
+// !!3-misol
+
+// let book = {
+//     title: "JavaScript for Beginners",
+//     author: "John Doe",
+//     year: 2021,
+//     price: 20
+//   };
+//   console.log(Object.entries(book))
+//     console.log(Object.fromEntries(book));
+
+
+// const button = document.getElementById('btn');
+
+// button.addEventListener('click',() => {
+//   button.classList.add = ('heading')
+// })
+
