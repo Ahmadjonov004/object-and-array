@@ -85,3 +85,34 @@ function separation(userss) {
   
 
 //   !! 1-misol  Short Circuit Evaluation (Qisqa tutashuvni baholash)
+
+function calculate(num1, num2, operation){
+    return(
+        operation === "+" && num1 + num2 ||
+        operation === "-" && num1 - num2 ||
+        operation === "*" && num1 * num2 ||
+        operation === "/" && (num2 !== 0 ? num1 / num2 : "nol bo'lishi mumkin emas")||
+        operation === undefined && "operator kiritilmagan" ||
+        "Noto'g'ri amal kiritdingiz"
+    );
+}
+console.log(calculate(4,5, "+"))
+
+// !! 2-misol '
+
+function getConfig(value){
+    return value || "to'g'ri kiritilmagan"
+}
+const config = { app: { version: "1.0.0" } };
+console.log(getConfig(config.app.version)); 
+console.log(getConfig(config.app.name));
+
+// !! 3-misol
+// function getGrades(students){
+//     return students.baho || []
+// }
+// const students = {namess : "Ali" };
+// console.log(getGrades(students.baho))
+
+
+// !! 1-misol Nullish Coalescing (??)
