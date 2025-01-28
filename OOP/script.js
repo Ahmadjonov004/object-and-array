@@ -114,6 +114,127 @@
 // !! 1.4-misol
 
 
+// function Car(model, color) {
+//     this.model = model;
+//     this.color = color; 
+//     this.isRunning = false; 
+
+    
+//     this.start = function() {
+//         if (!this.isRunning) {
+//             this.isRunning = true;
+//             console.log(`${this.model} mashinasi yoqildi.`);
+//         } else {
+//             console.log(`${this.model} mashinasi allaqachon yoqilgan.`);
+//         }
+//     };
+
+    
+//     this.stop = function() {
+//         if (this.isRunning) {
+//             this.isRunning = false;
+//             console.log(`${this.model} mashinasi o‘chirildi.`);
+//         } else {
+//             console.log(`${this.model} mashinasi allaqachon o‘chirilgan.`);
+//         }
+//     };
+// }
+
+// const myCar = new Car("Chevrolet Malibu", "Oq");
+
+// myCar.start(); 
+// myCar.start(); 
+// myCar.stop();  
+// myCar.stop();  
+
+// !! 1.5 - misol 
+
+// function Libruary(lists){
+//     this.lists = lists
+// }
+
+// Libruary.prototype.addBook = function(newBook){
+//     if(newBook){
+//         this.lists.push(newBook)
+//     }else{
+//         console.log('Yangi kitob mavjuda emas')
+//     }
+// }
+// Libruary.prototype.removeBook = function(){
+//     this.lists.shift()
+// }
+// const booklList1 = new Libruary(['Book 1', 'Book 2', 'Book 3', 'Book 4',])
+// booklList1.addBook('')
+// console.log(booklList1.removeBook())
+// console.log(booklList1)
+
+// !! 2.2-misol
+
+// function Animal(type, sound){
+//     this.type = type;
+//     this.sound = sound;
+// }
+
+// Animal.prototype.makeSound = function(){
+//     console.log(`${this.type}ning ovozi: ${this.sound}`);
+// };
+
+// const dog = new Animal('it', 'voov');
+// const cat = new Animal('Mushuk', 'Meow')
+
+// dog.makeSound();
+// cat.makeSound();
+
+
+
+// !! 2.3-misol
+
+// function Course(forename, continuous, price){
+//     this.forename = forename
+//     this.continuous = continuous
+//     this.price = price
+// }
+// Course.prototype.follow = function(){
+//     console.log(`${this.forename} kursining davomiyligi ${this.continuous}, narxi esa ${this.price}`)
+
+// };
+// const fronted = new Course("Fronted", '6oy', "500ming so'm")
+// fronted.follow();
+
+
+// !! 2.4 misol 
+// function Movie(forename, rating){
+//     this.forename = forename
+//     this.rating = rating
+// }
+
+// Movie.prototype.recommend = function(){
+//     console.log(`${this.forename} kinosi dunyo reytingida ${this.rating}-o'rinda turadi ko'rishingizni maslahat beraman`)
+// }
+// const forsaj = new Movie("forsaj", "10")
+// forsaj.recommend();
+
+// !! 2.5-misol
+
+function Order(forename, amount, total){
+    this.forename = forename
+    this.amount = amount
+    this.total = total
+}
+Order.prototype.calculateTotal = function(){
+    console.log(`${this.forename}ning miqdori ${this.amount}kg, umumiy narxi esa ${this.total * this.amount}so'm`)
+}
+const order1 = new Order("olma", "12", "12000")
+order1.calculateTotal();
+
+// !!ES6 Classes 3.1 - misol
+
+
+
+
+
+
+
 
 
 

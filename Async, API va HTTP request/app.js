@@ -1,25 +1,18 @@
+var xhr = new XMLHttpRequest();
+
+// Sinxron so'rovni sozlash
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', false); // 'false' - bu sinxron so'rovni anglatadi
+
+// So'rov bajarilganda
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(JSON.parse(xhr.responseText)); // Javobni konsolga chop etamiz
+    }
+};
+
+// So'rovni yuborish
+xhr.send();
 
 
-fetch("https://jsonplaceholder.typicode.com/posts/1", {
-    method: "POST", // So'rov turi
-    headers: {
-      "Content-Type": "application/json", // JSON formatini aniqlaydi
-    },
-    body: JSON.stringify({
-      title: "Yangi post",
-      body: "Bu postning mazmuni",
-      userId: 1,
-    }),
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP xatosi: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log("Yangi post:", data);
-    })
-    .catch(error => {
-      console.error("Xatolik yuz berdi:", error);
-    });
+
+// !! 2-misol 
