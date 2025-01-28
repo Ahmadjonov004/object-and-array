@@ -216,23 +216,62 @@
 
 // !! 2.5-misol
 
-function Order(forename, amount, total){
-    this.forename = forename
-    this.amount = amount
-    this.total = total
-}
-Order.prototype.calculateTotal = function(){
-    console.log(`${this.forename}ning miqdori ${this.amount}kg, umumiy narxi esa ${this.total * this.amount}so'm`)
-}
-const order1 = new Order("olma", "12", "12000")
-order1.calculateTotal();
+// function Order(forename, amount, total){
+//     this.forename = forename
+//     this.amount = amount
+//     this.total = total
+// }
+// Order.prototype.calculateTotal = function(){
+//     console.log(`${this.forename}ning miqdori ${this.amount}kg, umumiy narxi esa ${this.total * this.amount}so'm`)
+// }
+// const order1 = new Order("olma", "12", "12000")
+// order1.calculateTotal();
 
 // !!ES6 Classes 3.1 - misol
 
-class
+// class EmailService {
+//     constructor(sender, reciever){
+//         this.sender = sender
+//         this.reciever = reciever
+//     }
+//     sendEmail(massage){
+//         console.log(`${this.sender} tomonidan ${this.reciever}ga ${massage} xabari yuborildi!`)
+//     }
+// }
+// const mail = new EmailService("asilbek", "Iqboljon")
+
+// mail.sendEmail("salom")
+
+// !! 3.2 - misol
+
+// class Payment {
+//     constructor(price, save){
+//         this.price = price
+//         this.save = save
+//     }
+//     confirmPayment(massage){
+//         console.log(`${this.price} olma ${this.save} va ${massage}`)
+//     }
+// }
+// const pay1 = new Payment("10kg", "saqlandi")
+// pay1.confirmPayment("tasdiqlanndi")
+
+// !! 3.3-misol
+
+// class Player {
+//     constructor(forName, point){
+//         this.forName = forName
+//         this.point = point
+//     }
+//     addScore(rating){
+//         console.log(`${this.forName}ning reytingi ${this.point} edi ${rating}ga kotarildi va ${this.point - rating}ga teng bo'ldi`)
+//     }
+// }
+// const player1 = new Player("asilbek", "25")
+// player1.addScore(10)
 
 
-
+// !! 3.5misol
 
 
 
