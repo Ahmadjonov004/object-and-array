@@ -229,6 +229,7 @@ order1.calculateTotal();
 
 // !!ES6 Classes 3.1 - misol
 
+class
 
 
 
